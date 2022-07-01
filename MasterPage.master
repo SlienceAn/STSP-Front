@@ -1,0 +1,296 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="index_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"><meta name="author"><link rel="icon" href="#">
+<%--<link href="css/fdBS2.css" rel="stylesheet" type="text/css">
+<link href="css/S-slider.css" rel="stylesheet" type="text/css">
+<link href="css/PublicStyle.css" rel="stylesheet" type="text/css">--%>
+
+<title>南科園區環境監測資訊整合網</title>
+
+<link href="css/fdBS.css" rel="stylesheet" type="text/css">
+<link href="css/NankeStyle.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <style>
+        /*滑過換色*/
+        .navbar-default .navbar-nav > li > a:hover {
+            color: #fff;
+            display: block;
+        }
+
+        .navbar-default .navbar-nav > li:hover {
+            background-color: #57b500;
+        }
+
+        .S-menu > ul > li > a:hover {
+            background-color: #91e620;
+            border-top: 3px inset #1f4306;
+        }
+
+        .S-menu li a {
+            padding: 7px 20px 11px;
+        }
+
+        .list-unstyled li > a:hover {
+            color: #9e5f00;
+        }
+
+        .list-unstyled:hover {
+            background-color: #9fe14a;
+        }
+
+        .menuBt {
+            width: 100%;
+        }
+
+        .fdmenu li a {
+            padding: 0 40px;
+        }
+
+        .slip {
+            background-color: #57b500;
+            color: #fff !important;
+        }
+
+        @media(max-width: 991px) {
+            .navbar-nav > li {
+                padding-left: 0px;
+            }
+
+            .breadcrumb {
+                position: relative;
+                z-index: 2;
+            }
+        }
+    </style>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119394336-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119394336-1');
+</script>
+
+              <script>
+
+
+                  function click(c) {
+                      if (c == 1)
+                          document.getElementById("Button1").click()
+                      else if (c == 2)
+                          document.getElementById("Button2").click()
+                      else if (c == 3)
+                          document.getElementById("Button3").click()
+                      else if (c == 4)
+                          document.getElementById("Button4").click()
+                  }
+
+</script>
+
+    <form id="form1" runat="server">
+   
+<div class="wrapper">
+        
+            <div class="header">
+                <div class="container">
+                    <div class="menu">
+                        <div class="logo col-md-7">
+                            <a href="index5.aspx">
+                                <img src="image/page/LOGO.png" width="381"></a>
+                        </div>
+                        <div class="col-md-3">
+                        	
+                        </div>
+                        <div class="S-Bt col-md-2">
+                            <a href="http://203.66.68.21/backend/">
+                                <div class="S-menuBt BaBt04"></div>
+                            </a>
+                            <a href="index5.aspx">
+                                <div class="S-menuBt BaBt03"></div>
+                            </a>
+                        </div>
+                        <!--SmenuClass-->
+                    </div>
+
+
+                    <nav class="navbar navbar-default navbar-fixed-top phone-menu" role="navigation">
+						<div class="container">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar"> 
+									<span class="sr-only">南科園區環境監測資訊整合網</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span> 
+								</button>
+									<a class="navbar-brand pull-left" href="#">
+										<h3>南科園區環境監測資訊整合網</h3>
+									</a>                
+							</div>
+							<div id="navbar" class="navbar-collapse collapse" aria-expanded="true">
+								<ul class="menuBt nav navbar-nav ">
+									<li><a id="home" href="index5.aspx" data-toggle="tooltip" data-placement="bottom" title="">首頁</a></li>
+									<li><a id="auto" href="AutoMonitor.aspx?ST=Nankeshizhong" data-toggle="tooltip" data-placement="bottom" title="">自動連續監測</a></li>
+									<li><a id="byHand" href="sitemap.aspx" data-toggle="tooltip" data-placement="bottom" title="">人工批次監測</a></li>
+									<li><a id="site" href="Data_Site.aspx" data-toggle="tooltip" data-placement="bottom" title="">測站分布</a></li>
+									<%--<li><a id="number" href="AirQualityTreeMap2.aspx" data-toggle="tooltip" data-placement="bottom" title="">筆數變化</a></li>--%>
+									<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="">監測數據下載</a>
+                                        	<div class="fdmenu">
+											<div>
+											  <ul class="list-unstyled menuWidth">
+												<li><a href="javascript:click(1)">近2年空品</a></li>
+												<li><a href="javascript:click(2)">近2年地面水</a></li>
+												<li><a href="javascript:click(3)">近2年放流水</a></li>
+                                                  <li><a href="javascript:click(4)">營建工程噪音</a></li>
+                                                   <li><a href="downloadfile.aspx">環境微振監測結果</a></li>
+											  </ul>
+											</div>
+										</div>
+
+									</li>
+									<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="">資料下載</a>
+                                        	<div class="fdmenu">
+											<div>
+											  <ul class="list-unstyled menuWidth">
+												<li><a href="Document_Download.aspx">環評文件</a></li>
+												<li><a href="MeetingData_Download.aspx">會議資料</a></li>
+												<li><a href="Report_Download.aspx">簡報資料</a></li>
+											  </ul>
+											</div>
+										</div>
+									</li>
+									<li><a href="http://203.66.68.21/backend/" data-toggle="tooltip" data-placement="bottom" title="">系統登入</a></li>
+                                    <li><a href="call.aspx" data-toggle="tooltip" data-placement="bottom" title="">系統客服</a></li>
+								</ul>
+							</div>
+						</div><!--MENUcontainer-->
+					</nav>
+                </div>
+                <!--container-->
+                <div class="menuBar ">
+                    <div class="container">
+                        <div class="S-menu ">
+                            <ul>
+                                <li  <asp:Literal ID="Literal1" runat="server"></asp:Literal>><a href="AutoMonitor.aspx?ST=Nankeshizhong">自動連續監測</a></li>
+                                <li  ><a href="sitemap.aspx" <asp:Literal ID="Literal2" runat="server"></asp:Literal>>人工批次監測</a></li>
+                                <li  ><a href="Data_Site.aspx" <asp:Literal ID="Literal3" runat="server"></asp:Literal>>測站分布</a></li>
+                              <%--  <li  ><a href="AirQualityTreeMap2.aspx" <asp:Literal ID="Literal4" runat="server"></asp:Literal>>筆數變化</a></li>--%>
+                                <li   class="dropdown"><a href="#" <asp:Literal ID="Literal5" runat="server"></asp:Literal>>監測數據下載</a>
+                                    <div class="fdmenu">
+											  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:click(1)">近2年空品</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:click(2)">近2年地面水</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:click(3)">近2年放流水</a></li>
+                                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:click(4)">營建工程噪音</a></li>
+                                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="downloadfile.aspx">環境微振監測結果</a></li>
+                                           
+											  </ul>
+										</div>
+
+                                </li>
+                                 <li  class="dropdown"><a href="#" <asp:Literal ID="Literal6" runat="server"></asp:Literal> >資料下載</a>
+                                    <div class="fdmenu">
+											  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="Document_Download.aspx">環評文件</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="MeetingData_Download.aspx">會議資料</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="Report_Download.aspx">簡報資料</a></li>
+											  </ul>
+										</div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--container-->
+                </div>
+                <!--menuBar-->
+            </div>
+            <!--header-->
+
+
+            
+    <div class="page">
+        <div class="container">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   <!--content-inside-->
+              <asp:Button ID="Button1" runat="server" Text="Button" style="visibility:hidden;height:1px" OnClick="Button1_Click"/>
+      <asp:Button ID="Button2" runat="server" Text="Button" style="visibility:hidden;height:1px" OnClick="Button2_Click"/>
+      <asp:Button ID="Button3" runat="server" Text="Button" style="visibility:hidden;height:1px" OnClick="Button3_Click"/>
+               <asp:Button ID="Button4" runat="server" Text="Button" style="visibility:hidden;height:1px" OnClick="Button4_Click"/>
+        </div>
+        <!--container-->
+    </div>
+    <!--page1-->
+  
+    
+        
+        <div class="footer">
+            <div class="container">
+                <div class="text-muted">
+						<div class="footerBox col-md-2">
+                            <h5 style="font-size: 20px;font-weight:bolder">資料下載</h5>
+                                <ul>
+				                <li style="font-weight:normal"><a href="Document_Download.aspx">環評文件</a></li>
+								<li style="font-weight:normal"><a href="MeetingData_Download.aspx">會議資料</a></li>
+								<li style="font-weight:normal"><a href="Report_Download.aspx">簡報資料</a></li>
+                                </ul>
+                         </div>
+						<div class="footerBox col-md-2">
+                            <h5 style="font-size: 20px;font-weight:bolder">相關查詢</h5>
+                                <ul>
+										<li style="font-weight:normal"><a href="sitemap.aspx">人工批次監測</a></li> 
+										<li style="font-weight:normal"><a href="AutoMonitor.aspx?ST=Nankeshizhong">自動連續監測</a></li> 
+                                </ul>
+                        </div>
+						<div class="footerBox col-md-2">
+                            <h5 style="font-size: 18px;font-weight:bolder">人工批次下載</h5>
+                                <ul>
+										<li style="font-weight:normal"><a href="javascript:click(1)">近2年空品</a></li> 
+										<li style="font-weight:normal"><a href="javascript:click(2)">近2年地面水</a></li> 
+										<li style="font-weight:normal"><a href="javascript:click(3)">近2年放流水</a></li> 
+                                        <li style="font-weight:normal"><a href="javascript:click(4)">營建工程噪音</a></li> 
+                                        <li style="font-weight:normal"><a href="downloadfile.aspx">環境微振監測結果</a></li>
+                                </ul>
+                        </div>
+						<div class="footerBox col-md-2">
+                            <h5 style="font-size: 20px;font-weight:bolder">相關網站</h5>
+                                <ul>
+										<li style="font-weight:normal"><a href="http://nkdig.stsp.gov.tw/RoadDigging/" target="_blank">地理資訊系統</a></li> 
+										<li style="font-weight:normal"><a href="https://zh-tw.facebook.com/stsp543" target="_blank">南科543</a></li> 
+					
+										<li style="font-weight:normal"><a href="http://www.stspcsr.com.tw/" target="_blank">幸福南科CSR</a></li> 
+                                </ul>
+                        </div>
+                    	<div class="footerBox col-md-2">
+                            <h5 style="font-size: 20px;font-weight:bolder;"><a href="index1.aspx" style="color:white">回首頁<a></h5>
+                        </div>
+                </div><!--text-muted-->
+            </div>
+            <!--container-->
+			<div class="footerBox02">
+				<div class="container">
+					<p>© 2018 南部科學園區　由捷思環能公司維護開發。  電話：06-5051001　系統服務：07-331-2152 #307　服務時間：周一至周五 09:00~17:00</p>
+				</div>
+
+			</div><!--footerBox02-->
+        </div>
+        <!--footer-->
+    </div>
+    </form>
+</body>
+</html>

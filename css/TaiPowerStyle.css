@@ -1,0 +1,2257 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{ margin: 0 auto;
+box-sizing:border-box;}
+
+html, body {
+    height: 100%;
+}
+body {
+	background:white; 
+	margin: 0 auto; 
+	font-family: "微軟正黑體", "Microsoft JhengHei","Helvetica", "Microsoft JhengHei";
+	padding-top:91px;
+	line-height:1.48;
+	font-size:16px;
+	/*margin-bottom: 60px;*/
+}
+ul,li{
+	list-style:none;
+}
+	
+a { cursor:pointer; color: #258200;}
+a:hover { color: #194f00;}
+a, a:hover, a:link, a:visited, a:active {text-decoration:none;}
+.container {
+    min-height: 100%;
+}
+.Page_Style {
+    overflow:hidden;
+	min-height: 860px;
+    /*height: 100%;*/
+    margin-bottom: -200px;
+    padding-bottom: 200px;
+}
+/*#header {
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:#666; 
+	height:70px; 
+	width:100%;
+}*/
+
+/*#nav {
+	margin-left:50px;
+	margin-top:45px;
+	word-spacing:20px;
+}*/
+	
+#page1 {
+	height:1100px;
+	width:1000px;
+	background:#afc9ff;
+	padding-top:110px;
+	}
+	
+#page2 {
+	height:1100px;
+	width:1000px;
+	background:#777cdc;
+	padding-top:150px;
+	}
+	
+#page3 {
+	height:1100px;
+	width:1000px;
+	background:#9b70c0;
+	padding-top:150px;
+	}
+	
+.page-padding {height:90px; width:100%;}
+
+
+/*---------------------MENU---------------------*/
+.menu{
+	background:#fff;
+	border-top:5px solid #8bd621;
+			-moz-box-shadow:0px 1px 12px -2px rgba(20%,20%,40%,0.5);
+	-webkit-box-shadow:0px 1px 12px -2px rgba(20%,20%,40%,0.5);
+	box-shadow:0px 1px 12px -2px rgba(20%,20%,40%,0.5);
+}
+.menu .navbar-brand{
+	padding: 5px 15px;
+	height:auto;
+}
+.menu .container {
+	padding-right:30px;
+	padding-left:15px;
+	position:relative;
+}
+.menuBt a{
+	/*font-weight:bold;*/
+	font-size:16px;
+	height:81px;
+	color:#fff;
+	
+	padding-top:10px;
+	padding-left:5px;
+	padding-bottom:10px;
+	padding-right:5px;
+}
+.menuBt .here a{
+	color:#6db010 !important;
+	/*background-color:#8bd621;*/
+	font-weight:bolder;
+	height:86px;
+	border-bottom:5px solid #4d4d4d;
+}
+@media (max-width: 991px) {
+    .menuBt .here a{
+	    height: initial;
+    }
+}
+.menu .navbar-nav > li > a:hover, 
+.menu .navbar-nav > li > a:focus {
+    color: #6db010;
+    background-color: #f2f2f2;
+}
+.logo {
+}
+/*.logo:hover , .logo:focus{
+	background:#4d4d4d !important;
+}綠色*/
+.logo a{
+
+	padding: 10px 0 !important;
+}
+.sevenlogo{
+	background:url(../image/70-logo.png);
+	background-size:80px 58px;
+	/*width:100px;
+	height:74px;*/
+}
+.navbar-nav{
+	padding-left:2px;
+}
+.navbar-collapse{
+	/*background:#fff;*/
+}
+.navbar-default .navbar-nav > li > a {
+    /*color: #fff;*/
+}
+@media screen and (min-width: 250px) and (max-width: 768px){
+	.menuBt a{
+		color:#0f690e;
+		font-size:14px;
+		padding-top:10px !important;
+		padding-left:2px;
+		padding-bottom:10px;
+		padding-right:2px;
+		height:auto;
+	}
+	.sevenlogo{
+		display: none;
+		background:none;		
+	}
+	.navbar-collapse{
+		background:none;
+	}
+}
+@media (min-width: 768px){
+	.menuBt a{
+		color:#fff;
+		font-size:14px;
+		padding-top:30px !important;
+		padding-left:2px;
+		padding-bottom:10px;
+		padding-right:2px;
+		height:86px;
+	}
+	/*.sevenlogo{
+		display: none;
+		background:none;		
+	}*/
+	.navbar-collapse{
+		background:none;
+	}
+}
+@media (min-width: 992px){
+	.menuBt a{
+		font-size:16px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	/*.sevenlogo{
+		display:block;
+		background:url(../image/70-logo.png);
+		background-size:100px 74px;
+		width:100px;
+		height:74px;
+	}*/
+}
+@media (min-width: 1024px){
+	.menuBt a{
+		padding-left:11px;
+		padding-right:10px;
+	}
+}
+@media (min-width: 1200px){
+	.menuBt a{
+		font-size:18px;
+		padding-left:18px;
+		padding-right:17px;
+
+	}
+}
+/*---------------------MENU---------------------*/
+
+/*---------------------首頁---------------------*/
+.IndexTitle{
+	color:#0d7481;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:20px;
+}
+.TopPosts{
+}
+.TopPosts .row {
+    margin-bottom: 15px;
+}
+.TPHover{
+}
+.TPBox {
+	background:#F7F7F7;
+}
+.TPHover:hover .TPBox {
+	background:#ebebeb;
+}
+
+.FEPicHover{
+	z-index:400;
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+.TPPic-L .HateTips,
+.TPPic-R .HateTips,
+.FEPic .HateTips{
+    position: absolute;
+	right:0;
+    float:none;
+}
+.TPHover:hover .FEPic,
+.TPHover:hover .TPPic-L ,
+.TPHover:hover .TPPic-R {
+	
+	/*opacity:0.9;*/
+}
+.TPHover:hover .FEPicHover{
+	background:rgba(0,0,0,0.6) !important;
+	z-index:400;
+}
+.TPinfo {
+    padding: 0 20px;
+	min-height:40px;
+}
+.TPfst{
+	height:100px;
+}
+.TPPic-L {
+	position:relative;
+    height: 320px;
+    overflow: hidden;
+    text-align: center;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.TPPic-R {
+	position:relative;
+    height: 370px;
+    overflow: hidden;
+    text-align: center;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.TPinfo h3{
+	color:#0D7481;
+	padding-bottom:5px;
+	font-size: 20px;
+}
+.TPinfo h4{
+	text-transform: capitalize;
+	font-size: 16px;
+    font-weight: bold;
+	line-height:20px;
+	min-height:35px;
+	margin:0;
+}
+.TPBox a{
+	color:#4d4d4d;
+}
+.ActMess{
+	margin-bottom:50px;
+}
+.ActMess .dayBox{
+	height:120px;
+}
+.TPBox .FEPic{
+	background-position: top center !important;
+}
+.ActMess p,.ActMess small{
+	font-size:16px;
+}
+
+.Index .greenMap-d .FEBox {
+	background:#F7F7F7;
+	padding:10px 15px;
+	border:none;
+}
+.Index .greenMap-d .FEBox h4 {
+	color:#0d7481;
+	font-size:20px;
+}
+.Index .greenMap-d .FEBox .FEinfo {
+	font-size:16px;
+	color:#333333;
+}
+
+/*.TopPosts .TPHover:hover .liveTips{
+	background: #ebebeb;
+	color:#666;
+}*/
+
+
+@media screen and (max-width: 767px){
+.TPHover {
+    margin-bottom: 10px;
+}
+.TopPosts .row {
+    margin-bottom: 0;
+}
+.ActMess .dayBox{
+	height:50px;
+}
+.ActMess .day-day {
+    border-right: 0;
+}
+}
+@media screen and (max-width: 1023px){
+.TPPic-L {
+    height: 200px;
+}
+.TPPic-R {
+    height: 200px;
+}
+.TPinfo h4{
+	display:none;
+}
+.TPfst{
+	height:auto;
+}
+.TPBox .FEPic{
+	height:200px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.TPHover {
+    margin-bottom: 0;
+}
+.TopPosts .row {
+    margin-bottom: 15px;
+}
+.ActMess .dayBox{
+	height:100px;
+}
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+
+.TPPic-L {
+    height: 180px;
+}
+.TPPic-R {
+    height: 230px;
+}
+.TPinfo h4{
+	display:block;
+}
+.ActMess .dayBox{
+	height:100px;
+}
+.TPBox .FEPic{
+	height:200px;
+}
+}
+.AMInfo {
+    padding:0 20px;
+	height:120px;
+}
+.AMInfo h3{
+	font-size: 20px;
+	color:#108266;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.ActMess .col-sm-4{
+	padding-left:0;
+	padding-right:0;
+}
+.ActMess .row{
+	margin-bottom:20px;
+}
+.ActClass{
+	position:relative;
+	margin-top:-50px;
+	padding-bottom:20px;
+}
+.ActClass a{
+	color:#333;
+}
+.ActClass .roundL {
+    width: 100px;
+    height: 100px;
+	top: 50px;
+	color:#fff;
+}
+.ActClass .roundL .month, 
+.ActClass .roundL .date{
+	position:initial;
+	display:block;
+
+	margin:0 auto;
+	width:100px;
+	text-align:center;
+	padding:0
+}
+.ActClass .roundL .month{
+	font-size:32px !important;
+	padding-top:20px;
+	line-height:40px;
+}
+.ActClass .roundL .date{
+	font-size:16px !important;
+	padding-top:5px;
+	line-height:20px;
+}
+
+.ActClass .liveBox {
+    background: #f2f2f2;
+	height:185px;
+}
+
+.ActClass .col-md-3:hover .liveBox{
+	background: #ebebeb;
+}
+.ActClass .col-md-3:hover .liveTips{
+	background: #ebebeb;
+	color:#666;
+}
+.liveTips{
+	padding:5px 10px;
+	border-top:1px solid #ccc;
+	/*background: #f2f2f2;*/
+	font-size:14px;
+	font-weight:bold;
+	text-align:right;
+	color:#666;
+}
+.FEinfo .liveTips{
+	padding:0 0 5px 0;
+	border-top:none;
+	/*border-botton:1px solid #ccc;*/
+	/*background: #f2f2f2;*/
+	font-size:14px;
+	font-weight:bold;
+	text-align:left;
+	color:#666;
+}
+/*.liveTips:before{
+	content:url(../image/index/LinkGO_S.png);
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:5px;
+	top:3px;
+}*/
+.liveTips h5{
+	line-height: 1.48;
+	margin-top:0;
+	margin-bottom:0;
+	font-weight:bold;
+}
+.ActClass .liveBox p {
+    top: 50px;
+}
+.ActClass .liveBox small {
+     display: block;
+}
+.ActClass  .liveBox h3 {
+	padding:15px;
+    top: 50px;
+}
+.ActClass .liveBox .glyphicon{
+	bottom:5px;
+}
+
+.GNAwaken{
+	margin-bottom:30px;
+}
+.GNApic{
+}
+@media screen and (max-width: 991px){
+.GNApic{
+	max-width:50%;
+}
+}
+.GNAInfo {
+}
+.GNAInfo h3{
+	margin-top: 10px;
+	font-size:20px;
+}
+.GNAInfo h5{
+	color:#808080;
+}
+.GNAInfo p{
+	color:#000;
+}
+.more {
+	text-align:left;
+    color: #FFF !important;
+    padding: 10px 25px;
+    font-weight: 900;
+    display: block;
+    margin: 20px 0;
+    background-color: #4096DC;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+}
+.more:hover{
+	background-color: #449EE8;
+}
+/*---------------------首頁---------------------*/
+
+.HateTips{
+	padding:5px 10px 0 0;
+	margin:10px;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	float:right;
+	z-index:600;
+}
+.HateTips img{
+	z-index:600;
+}
+.TitleBox .HateTips{
+	padding: 0 10px 0 0;
+    margin: 0; 
+    float:none; 
+    position: absolute;
+    display: block;
+    right: 0;
+	top: -15px;
+}
+@media (max-width: 767px){
+.TitleBox .HateTips{
+	display:none;
+}
+}
+/*---------------------內頁---------------------*/
+.TitleBox{
+	color:#0d7481;
+	/*height:110px;*/
+	/*border-bottom:1px solid #e6e6e6;*/
+}
+.TitleBox h2{
+	position:relative;
+}
+.infoBox{
+	padding: 25px 0;
+    color: inherit;
+    background-color: #f2f2f2;
+}
+.infoBox .container{
+	padding-left:30px;
+	padding-right:30px;
+}
+.WhiteBox{
+	background-color:#fff;
+}
+
+/*---------------------內頁---------------------*/
+
+/*---------------------台電綠動---------------------*/
+.underMenu{
+	margin: 0 auto 15px auto;
+    width: 250px;
+}
+.underMenu a{
+	color:#4d4d4d;
+	padding:10px;
+}
+.underMenu .dropdown-menu{
+	min-width:inherit;
+}
+.FEBox{
+	border:1px solid #ccc;
+	background:#fff;
+	margin:5px 5px 15px 5px;
+}
+.FEBox:hover{
+	opacity:0.85;
+}
+.picClass{
+	overflow:visible;
+}
+.picClass .col-md-4{
+	padding:0;
+}
+.FEPic{
+	position:relative;
+	
+	height: 280px;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.FEinfo{
+	padding:15px 20px;
+}
+.FEinfo h4{
+	text-transform: capitalize;
+	font-size: 16px;
+    font-weight: bold;
+	line-height:20px;
+	min-height:30px;
+	margin:0;
+}
+.FEBox a{
+	color:#4d4d4d;
+}
+.load-more {
+    /*font-family: "proxima_nova_rgregular","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif !important;*/
+    color: #FFF !important;
+    padding: 10px 15px;
+    font-weight: 900;
+    display: block;
+    margin: 20px auto 45px auto;
+    background-color: #c7c7c7;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+}
+.load-more:hover{
+	background-color: #D3D3D3;
+}
+/*---------------------台電綠動---------------------*/
+/*---------------------綠網新知---------------------*/
+.knowledge{
+}
+.knowledge .FEinfo h4{
+	min-height:40px;
+}
+.knowledge .FEPic{
+	height: 200px;
+}
+/*---------------------綠網新知---------------------*/
+/*---------------------重點文章---------------------*/
+.TopicsPosts{
+}
+.TopicsPosts .FEPic{
+	height: 200px;
+}
+.TopicsPosts .FEinfo{
+	min-height:100px;
+}
+.TopicsPosts .FEinfo h3{
+	color:#108266;
+	margin-top:5px;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+.bookmark{
+	padding-top: 7px;
+	margin:0 auto;
+	padding-bottom:10px;
+}
+.bookmark a{
+	border-radius: 15px;
+	padding: 6px 20px;
+	font-size:16px;
+}
+.bookmark a:hover{
+	background-color:#9ad42f;
+}
+.bookmark .btn-default{
+	border:1px solid #fff;
+}
+.Slogan{
+	color:#0d7481;
+	padding-bottom:10px;
+	font-size:20px;
+}
+h2 .Slogan{
+	display:inline-block;
+	color:#754c24;
+	padding-bottom:0;
+	padding-left:10px;
+	font-size:20px;
+}
+@media (max-width: 767px){
+h2 .Slogan{
+	display:block;
+	padding-top:10px;
+}
+}
+/*---------------------重點文章---------------------*/
+
+.EventsPage{
+}
+.EventsPage .PageHeader{
+	height:100% !important;
+}
+.EventsPage .Page_Style{
+	background-color: #f2f2f2;
+}
+.EventsPage .TitleBox{
+	background-color: #fff;
+}
+.EventsPage h2{
+	text-align:left;
+	margin-bottom:20px;
+}
+.EventsPage hr{
+	border-color:#ccc;
+}
+.EventsPage .infoBox{
+	min-height: 300px;
+}
+
+
+
+/*---------------------顏色標籤---------------------*/
+.day-Green{
+	background-color:#96e058;
+}
+.day-Yellow{
+	background-color:#ffcb00;
+}
+.day-Pink{
+	background-color:#fa83af;
+}
+.day-Purple{
+	background-color:#a48fdb;
+}
+.day-Green{
+	background-color:#96e058;
+}
+.day-Yellow,.day-Pink,.day-Purple,.day-Green{
+	color:#FFF;
+	position:relative;
+}
+/*
+.day-Green h5:before,
+.day-Purple h5:before,
+.day-Yellow h5:before,
+.day-Pink h5:before{
+    content:"";
+	position:relative;
+	bottom:0;
+    display:inline-block;
+	width:16px;
+	height:16px;
+}
+.day-Green h5:before{/*綠色生活*//*
+	background:url(../image/index/icon_GreenLife.png) no-repeat;
+	background-size:16px;
+}
+.day-Purple h5:before{/*低碳永續*//*
+	background:url(../image/index/icon_Lowcarbon.png) no-repeat;
+	background-size:16px;
+}
+.day-Yellow h5:before{/*生態保育*//*
+	background:url(../image/index/icon_NaturalHelp.png) no-repeat;
+	background-size:16px;
+}
+.day-Pink h5:before{/*人文采風*//*
+	background:url(../image/index/icon_PeopleView.png) no-repeat;
+	background-size:16px;
+}*/
+/*---------------------顏色標籤---------------------*
+
+
+/*---------------------焦點活動------------------------*/
+.FocusBox{
+	background-color:#f2f2f2;
+	margin-bottom:15px;
+}
+.FocusBox:hover{
+	background-color:#e6e6e6;
+}
+.FocusBox:hover .nonePic {
+    background-color: #d1d1d1;
+}
+.FocusBox:hover .FEPicHover{
+	background:rgba(0,0,0,0.4) !important;
+	z-index:400;
+}
+
+.dayBox, .FocusPicBox, .FocusInfo{
+}
+.dayBox{
+}
+.FocusBox .col-sm-5{
+	padding:0;
+}
+.FocusBox .col-sm-1{
+	padding:0;
+}
+.day-day,.day-place{
+	width:100%;
+	height:100px;
+	color:#fff;
+}
+.day-day{
+	position:relative;
+	border-bottom:1px solid #fff;
+}
+.day-place{
+	text-align:center;
+	font-size:20px;
+	line-height:100px;
+}
+.out{
+	background:url(../image/diagonal.png) center no-repeat;
+	background-size:100% 100px;
+}
+.month{
+	padding-left:5px;
+	position:absolute;
+	top:5px;
+	left:0;
+}
+.date{
+	padding-right:5px;
+	position:absolute;
+	right:0;
+	bottom:10px;
+
+}
+.FocusPicBox{
+	position:relative;
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.FocusInfo{
+	padding:15px 30px;
+}
+.FocusInfo h3{
+	color:#108266;
+	font-weight:600;
+	margin-top:10px;
+	margin-bottom:20px;
+	font-size:20px;
+}
+.FocusBox .FocusInfo p{
+	margin: 0 0 5px;
+}
+@media (max-width: 767px){
+.dayBox{
+	height:50px;
+}
+.FocusPicBox, .FocusInfo{
+	height:200px;
+}
+.day-day,.day-place{
+	width:50%;
+	height: 50px;
+	float:left;
+}
+.day-day{
+	border-right:1px solid #fff;
+	border-bottom:0;
+}
+.day-place{
+	line-height:50px;
+}
+.out{
+	background-size:0;
+}
+.month{
+	top:10px;
+	left:5px;
+	font-size:22px;
+}
+.date{
+	top:10px;
+	left:65px;
+	font-size:22px;
+}
+}
+@media (min-width: 768px){
+.dayBox, .FocusPicBox, .FocusInfo{
+	height:200px;
+}
+.month{
+	font-size:18px;
+}
+.date{
+	font-size:14px;
+}
+}
+@media (min-width: 1024px){
+.dayBox, .FocusPicBox, .FocusInfo{
+	height:200px;
+}
+.month{
+	font-size:22px;
+}
+.date{
+	font-size:16px;
+}
+}
+@media (min-width: 1200px){
+.dayBox, .FocusPicBox, .FocusInfo{
+	height:240px;
+}
+.month{
+	font-size:26px;
+}
+.date{
+	font-size:18px;
+}
+.day-day,.day-place{
+	height:120px;
+}
+.day-place{
+	line-height:120px;
+}
+}
+
+.nonePic{
+	background:#e6e6e6;
+	background-repeat:no-repeat;
+	background-size:30%;
+	background-position:center;
+}
+.none-Green{
+	background-image:url(../image/FocusPic/no-green.png);
+}
+.none-Pink{
+	background-image:url(../image/FocusPic/no-pink.png);
+}
+.none-Yellow{
+	background-image:url(../image/FocusPic/no-yellow.png);
+}
+.none-Purple{
+	background-image:url(../image/FocusPic/no-purple.png);
+}
+/*---------------------焦點活動------------------------*/
+
+/*---------------------環教萬大場所---------------------*/
+.eduPage{
+}
+.eduMain{
+	position:relative;
+	margin-left:100px;
+}
+.eduMain img{
+	position:relative;
+	left:-200px;
+}
+@media (max-width: 991px){
+.eduMain{
+	position:relative;
+	margin-left:0;
+}
+.eduMain img{
+	display:none;
+}
+}
+
+.eduPage .liveBox{
+	height:160px;
+}
+.eduMap{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.wholive{
+	position:relative;
+	margin-top:-100px;
+	padding-bottom:20px;
+}
+.liveBox{
+	background:#fff;
+	height:230px;
+	text-align:center;
+}
+.wholive .col-md-3 {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.roundL{
+	width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	top:100px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+.roundL{
+	width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	top:100px;
+}
+}
+@media screen and (min-width: 1200px){
+.roundL{
+	width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	top:100px;
+}
+}
+.liveBox h3{
+	position:relative;
+	top:100px;
+	margin:0;
+	padding: 15px 0;
+	font-size:20px;
+}
+.liveBox p{
+	position:relative;
+	top:100px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.liveInfo{
+	padding:15px 20px;
+	background:#fff;
+}
+.liveInfo p{
+	margin: 0 0 5px;
+}
+.eduMapinfo{
+	padding:10px;
+	background:#fff;
+	margin-left:-5px;
+	margin-right:-5px;
+}
+.eduMapinfo .col-md-7{
+	padding-left: 0;
+}
+.eduMapinfo img {
+	/*width:100%;*/
+	margin:0;
+}
+.eduMapinfo p {
+	margin-top:15px;
+	margin-bottom:0;
+}
+.eduMapinfo li{
+	list-style:decimal;
+	padding-top:15px;
+}
+
+.eduPage .slick-prev:before,
+.eduPage .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color:  #666666 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.eduPage .slick-slide {
+    margin: 10px;
+}
+.eduPage .liveBox {
+    padding: 0 20px;
+}
+.eduPage .slick-slider .slick-track{
+	margin-top:-80px;
+}
+.eduPage .btn-lg, 
+.eduPage .btn-group-lg > .btn {
+    font-size: 16px;
+}
+.WandaReview {
+    width: 105px;
+    /*display: inline;*/
+    position:absolute;
+    background-color: #ec971f !important;
+    border-color: #d58512 !important;
+    border-radius: initial !important;
+    padding: 10px 25px;
+}
+.WandaReview:hover {
+    background-color: #efa43c !important;
+    border-color: #efa43c !important;
+}
+
+@media (max-width: 991px) {
+    .WandaReview {
+        position:relative;
+    }
+}
+.LessonText {
+    text-align: left;
+    color: black;
+    padding: 5px;
+    position: relative;
+}
+
+.LessonFooter-G {
+    height: 45px;
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
+    position: absolute;
+    background-color: #96e058;
+    line-height: 45px;
+    font-size: 20px;
+    text-align: right;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.LessonFooter-Y {
+    height: 45px;
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
+    position: absolute;
+    background-color: #ffcb00;
+    line-height: 45px;
+    font-size: 20px;
+    text-align: right;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.LessonTitle {
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.LessonHr {
+    border-color: #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.LessonNum-G {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: #96e058;
+    line-height: 50px;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    padding: 0;
+}
+
+.LessonNum-Y {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: #ffcb00;
+    line-height: 50px;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    padding: 0;
+}
+
+.LessonBox {
+    height: 475px;
+    position: relative;
+    top: 100px;
+    margin-bottom: 120px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.LessonBox .LPic {
+    height: 195px;
+    overflow: hidden;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #ccc;
+    background-size: cover !important;
+    background-position: center !important;
+}
+/*---------------------環教萬大場所---------------------*/
+
+/*---灰底頁籤---*/
+.grayTab{
+    padding-bottom: 0;
+}
+.grayTab > .nav-tabs.nav-justified{
+    width:auto;
+    float: right;
+    border-bottom: 0;
+}
+.grayTab > .nav-tabs.nav-justified > li {
+    width: auto;
+    float:left;
+}
+.grayTab > .nav-tabs.nav-justified > li > a {
+    margin-right: 5px;
+	padding:15px 30px;
+	border-top: 9px transparent solid;
+	border-bottom:none;
+	  -webkit-transition: 0.2s linear;
+	transition: 0.2s linear;
+}
+.grayTab > .nav-tabs.nav-justified > .active > a,
+.grayTab > .nav-tabs.nav-justified > .active > a:hover,
+.grayTab > .nav-tabs.nav-justified > .active > a:focus {
+	border: 1px solid transparent;
+	border-left:1px solid #96d940;
+	border-right:1px solid #96d940;
+	border-top:9px solid #96d940;
+}
+.grayTab > .nav-tabs > li.active > a, 
+.grayTab > .nav-tabs > li.active > a:hover, 
+.grayTab > .nav-tabs > li.active > a:focus {
+    color: #00685b;
+    background-color: #f5f5f5;
+}
+.grayTab > .nav-tabs > li > a:hover {
+     border-color: initial; 
+}
+.grayTab > .nav > li > a:hover, 
+.grayTab > .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #eee;
+    border-top: 9px #ccc solid;
+}
+@media (max-width: 991px){
+.grayTab > .nav-tabs.nav-justified{
+    width:100%;
+    float:none;
+    border-bottom: 0;
+}
+.grayTab > .nav-tabs.nav-justified > li {
+    float:none;
+}
+}
+/*---灰底頁籤---*/
+/*---白底頁籤---*/
+.whiteTab{
+    padding-bottom: 0;
+}
+.whiteTab > .nav-tabs.nav-justified {
+    width: auto;
+    float: right;
+    border-bottom: 0;
+}
+.whiteTab > .nav-tabs.nav-justified > li {
+    width: auto;
+    float: left;
+}
+.whiteTab > .nav-tabs.nav-justified > li > a {
+	padding:15px 40px;
+	border-top: 9px transparent solid;
+	border-bottom:1px solid #96d940;
+	  -webkit-transition: 0.2s linear;
+	transition: 0.2s linear;
+}
+.whiteTab > .nav-tabs.nav-justified > .active > a,
+.whiteTab > .nav-tabs.nav-justified > .active > a:hover,
+.whiteTab > .nav-tabs.nav-justified > .active > a:focus {
+	border: 1px solid transparent;
+	background-color:#fff;
+	border-left:1px solid #96d940;
+	border-right:1px solid #96d940;
+	border-top:9px solid #4b9c22;
+	color:#263d17;
+	font-weight:bold;
+}
+.whiteTab > .nav-tabs > li.active > a, 
+.whiteTab > .nav-tabs > li.active > a:hover, 
+.whiteTab > .nav-tabs > li.active > a:focus {
+    color: #00685b;
+    /*background-color: #f5f5f5;*/
+}
+.whiteTab > .nav-tabs > li > a:hover {
+     border-color:initial;
+}
+.whiteTab > .nav > li > a:hover, 
+.whiteTab > .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #eee;
+    border-top: 9px #ccc solid;
+}
+@media (max-width: 991px){
+.whiteTab > .nav-tabs.nav-justified{
+    width:100%;
+    float:none;
+    border-bottom: 0;
+}
+.whiteTab > .nav-tabs.nav-justified > li {
+    float:none;
+}
+}
+/*---白底頁籤---*/
+
+
+
+.insidePage{
+}
+.insidePage h2{
+	font-size:20px;
+	color:#754c24;
+}
+.insidePage h3{
+	font-size:20px;
+	margin-top:0;
+	margin-right:10px;
+}
+.insidePage p{
+	line-height:29px;
+	color:#000;
+	padding-top:5px;
+	padding-top:15px;
+
+}
+.PicThree {
+    height: 80%;
+}
+.abreastPic {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+/*浮動MENU*/
+
+.floatMenu{
+ width:110px; /*如果每個區塊的字數較多，請自行調大這裡的數值。*/
+ position:fixed;
+ top:20%;
+ right:-15px;
+ z-index:999;
+}
+
+ .pointer {
+/*這段之下是讓效果變柔和的效果，可自行修改「.25」的數值調整速度*/
+ -webkit-transition:all .25s ease-in-out; 
+ -moz-transition:all .25s ease-in-out; 
+ -o-transition:all .25s ease-in-out; transition:all .25s ease-in-out; 
+ 
+ background-color:#fff;
+ text-indent:0;
+ display:inline-block;
+ font-size:1em;
+ font-style:normal;
+ height:40px; 
+ line-height:40px;
+ width:100px; 
+ text-decoration:none;
+ text-align:center;
+ margin-bottom:5px;
+ /*border-bottom:#8bd621 1px solid;
+ border-top:#8bd621 1px solid;*/
+ border-left: #8bd621 10px solid; 
+}
+
+.pointer:hover{
+ border-left: #4d4d4d 5px solid; 
+}
+
+.floatMenu_Common{
+ width:135px; /*如果每個區塊的字數較多，請自行調大這裡的數值。*/
+ position:fixed;
+ top:60%;
+ right:-15px;
+ z-index:999;
+}
+.float-red{
+	 width:125px; 
+	 border-left:#F36 10px solid; 
+}
+@media (max-width: 991px){
+.floatMenu_Common{
+ top:65%;
+}
+}
+@media screen and (min-width: 1200px){
+.floatMenu_Common{
+ top:50%;
+}
+}
+
+/*浮動MENU*/
+
+
+/*---------------------南灣珊瑚---------------------*/
+.SouthBay{
+	    min-height: 100%;
+		height: auto;
+}
+.SouthBay .infoBox {
+    padding: 0 0 20px 0;
+}
+.SouthBay .GNAInfo p{
+	padding-top:20px;
+}
+.SouthBay .GNAInfo img{
+	padding-bottom:30px;
+}
+.prefBody{
+	padding-bottom:40px;
+}
+.SouthBay .mi-slider nav .pull-left,
+.SouthBay .mi-slider nav .pull-center,
+.SouthBay .mi-slider nav .pull-right {
+    font-size: 14px !important;
+}
+
+.SouthPage .row{
+	margin-bottom:20px;
+}
+.SouthPage h3{
+	margin-top:20px;
+}
+.SouthPage .bookmark a{
+	cursor:pointer !important;	
+}
+.SouthBox{
+	/*margin-top:10px;
+	margin-bottom:10px;*/
+}
+@media (max-width: 991px){
+.SouthBox{
+	margin-bottom:10px;
+}
+}
+.SouthBox:hover .liveBox{
+	background:rgba(0, 0, 0, 0.5);
+}
+.SouthBox:hover .liveBox p{
+	color:#fff;
+}
+.SouthBox:hover .roundL{
+}
+.SouthBox .roundL{
+    width: 80px;
+    height: 80px;
+	top: 0;
+	position:absolute;
+	display:inline-block;
+}
+.SouthBox .liveBox{
+    margin-left: 40px;
+    height: 80px;
+}
+.SouthBox .liveBox p {
+	position: absolute;
+    top: 0;
+    height: 80px;
+    line-height: 80px;
+    width: 190px;
+    margin-left: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+}
+/*---------------------南灣珊瑚---------------------*/
+
+/*---------------------丟丟樂---------------------*/
+.throwPage{
+	/*background:#f5f8b8;*/
+	background:#e9e9e9;
+}
+.throwClass{
+	margin-top: 70px;
+	margin-bottom:50px;
+}
+.throwTab{
+	padding-top: 40px;
+	max-width:350px;
+	padding-left: 30px;
+}
+.throwTab ul{
+	padding:0;
+	margin:20px 0;
+}
+.throwTab li{
+	display:inline-block;
+	width:99px;
+	height:91px;
+	background-size:100%;
+}
+.throwTab li {
+		-webkit-transition: 0.1s linear;
+	transition: 0.1s linear;
+}
+.thBt01{
+	background:url(../image/throwPic/throwBT01.png);
+}
+.thBt02{
+	background:url(../image/throwPic/throwBT02.png);
+}
+.thBt03{
+	background:url(../image/throwPic/throwBT03.png);
+}
+.thBt01:hover{
+	background:url(../image/throwPic/throwBT01_W.png);
+	background-size:100%;
+}
+.thBt02:hover{
+	background:url(../image/throwPic/throwBT02_W.png);
+	background-size:100%;
+}
+.thBt03:hover{
+	background:url(../image/throwPic/throwBT03_W.png);
+	background-size:100%;
+}
+.thMap{
+}
+.thMap img{
+	/*width:608px;*/
+}
+.diceBOx{
+	width:220px;
+	height:220px;
+	background:#fff;
+}
+.dicediceBox{
+	width:185px;
+	margin:0 auto;
+	padding:20px 0 10px 0;
+}
+.dice{
+	margin:0 auto;
+	width:140px;
+	height:130px;
+}
+.dice img{
+	width:140px;
+}
+.throwPage .more{
+	text-align:center;
+	margin:25px auto;
+}
+.diceGO {
+    text-align: center;
+    color: #000 !important;
+    font-weight: 900;
+    display: block;
+    margin:10px auto;
+    background-color: #afe565;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+}
+.diceGO:hover{
+	background-color: #b7f06a;
+}
+@media (max-width: 991px){
+.throwTab{
+	padding-top: 0;
+	max-width:350px;
+	padding-left: 20px;
+}
+.thMap img{
+	width:100%;
+}
+
+}
+/*---------------------丟丟樂---------------------*/
+/*---------------------綠網精神---------------------*/
+.spiritClass{
+	background:#fff;
+	border:1px solid #cccccc;
+	border-radius:10px;
+	padding:20px 30px;
+	margin-top:25px;
+	margin-bottom:25px;	
+}
+.spiritPic{
+	float:right;
+	width:35%;
+	margin-left:50px;
+}
+.spiritClass .small{
+	padding-top:20px;
+	padding-bottom:10px;
+	line-height:24px;
+	color:#754c24;
+}
+.spiritClass p{
+	text-align:justify;
+	color:#000;
+}
+@media (max-width: 991px){
+.spiritPic{
+	float:none;
+	width:90%;
+	margin-left:0;
+}
+}
+/*---------------------綠網精神---------------------*/
+/*---------------------台電之美--------------------*/
+.beautyPage{
+	background-color:#e9e9e9;
+	padding-top:50px;
+}
+.beautyPage .FEBox{
+		-webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+    border-radius: 5px;
+	padding-bottom:10px;
+}
+.beautyPage .FEBox h3{
+	font-size:20px;
+	margin-top:0;
+	margin-bottom:15px;
+	color:#0D7481;
+	min-height:45px;
+}
+.beautyPage hr{
+	border-color:#ccc;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.beautyPage .firstBox{
+	width:99%;
+}
+.beautyPage .FEBox:hover{
+	opacity:1;
+}
+.beautyPage .FEinfo {
+	padding:10px 10px 0 10px;
+	min-height:125px;
+}
+.beautyPage .FEBox .download{
+	margin-left:15px;
+	margin-right:15px;
+	margin-bottom:15px;
+	color: #337ab7;
+}
+.beautyPage .FEBox .download:hover{
+	color: #3fa9f5;
+}
+.content_box{
+	/*border: 1px dotted #4F4F4F;
+	padding: 10px;
+	margin: 5px 5px 5px 0;*/
+	width:275px;
+	overflow:hidden;
+	line-height: 150%;
+	letter-spacing: 1pt;
+	/*color:#353535;*/
+	display: inline-block;
+}
+
+@media screen and (max-width: 767px){
+.beautyPage .firstBox {
+    width: 95%;
+}
+.content_box{
+	width:95%;
+	display: block;
+}
+._container{
+	padding-left:15px;
+	margin-right:10px;
+	padding-bottom:20px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+._container{
+	margin-left:40px;
+	margin-right:40px;
+}
+}
+@media screen and (min-width: 1200px){
+._container{
+	margin:0 auto;
+}
+}
+/*---------------------台電之美--------------------*/
+/*---------------------小提示---------------------*/
+        .bs-example:after {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-weight: bold;
+            color: #959595;
+            content: "文宣品下載";
+        }
+        .bs-example {
+            position: relative;
+            padding: 45px 15px 15px;
+            margin:0 auto;
+            width:85%;
+            background-color: #fff;
+            border-color: #ddd;
+            border-width: 1px;
+            border-radius: 4px 4px 0 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+/*---------------------小提示---------------------*/
+/*---------------------檯燈---------------------*/
+.light{
+	position:fixed;
+	right:1%;
+	z-index:9999;
+	/*top:15%;*/
+	top:1%;
+}
+.eyes{
+	display:block;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 30%;
+}
+@media screen and (max-width: 992px){
+.light{
+	top:20%;
+	right:3%;
+}
+}
+
+/*---------------------檯燈---------------------*/
+/*---------------------footer---------------------*/
+.footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #333333;
+	clear: both;
+	padding:40px 20px;
+}
+.text-muted {
+	font-size:14px;
+	line-height:20px;
+    color: #f2f2f2;
+}
+.footBT{
+}
+.footer .pull-right{
+}
+.footer .pull-right a{
+	float:none;
+	display:block;
+}
+@media screen and (max-width: 992px){
+.footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height:auto;
+    background-color: #333333;
+	clear: both;
+	padding:40px 20px;
+}
+.links {
+    display: none;
+}
+.footer .pull-right{
+	float:none !important;
+}
+.footer .pull-right a{
+	padding-right:10px;
+	float:none;
+	display:inline-block;
+}
+}
+/*---------------------footer---------------------*/
+
+
+
+
+
+
+
+
+/*---------------------GreenNet 2017 Birthday---------------------*/
+        .AnniversaryLogin {
+            position: fixed;
+            bottom: 10px;
+            right: 0px;
+            background-color: white;
+            z-index: 9999;
+            box-shadow: 0px 1px 12px -2px rgba(20%,20%,40%,0.5);
+        }
+        
+
+        .highlight:before{
+            background: url(image/starFull.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50%;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+            z-index: -1;
+            animation: highlight 12s linear infinite;
+            animation-name: highlight;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            animation-delay: initial;
+            animation-iteration-count: infinite;
+            animation-direction: initial;
+            animation-fill-mode: initial;
+            animation-play-state: initial;
+        }
+
+
+
+        .ScalePinata {
+            width: 100px;
+            cursor: pointer;
+            animation: ScalePinata 2s linear infinite;
+        }
+        .shake-slow {
+            animation: shake-slow 50s linear infinite;
+        }
+
+
+
+        .PinataBox {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 30px;
+            bottom: 60px;
+            left: 25em;
+            z-index: 1000;
+        }
+        .Pn_User {
+            min-width: 130px;
+            line-height: 40px;
+            text-align:center;
+            margin-bottom: 0;
+            /*border-bottom: 1px solid gray;
+            border-right: 1px solid gray;*/
+        }
+        .Bt_loginOut {
+            right: 10px;
+            float: right;
+            /* top: 14px; */
+            position: relative;
+            font-size: 14px;
+            color: #f0ad4e;
+        }
+        @media (max-width: 991px) {
+
+            .PinataBox {
+                left:initial;
+                bottom:initial;
+                padding-top:initial;
+            }
+        }
+        
+        .PinataBFont {    
+            color: white;
+            font-size: 2em;
+            font-weight: bolder;
+            position: absolute;
+            left: 23px;
+            top: 33px;
+            text-align: center;
+            min-width: 60px;
+            /*-webkit-text-stroke: 2px black;*/
+            text-shadow: 3px 3px 3px #000;
+            pointer-events: none;
+        }
+        .PinataB {
+            cursor:pointer;
+        }
+
+
+
+
+
+
+
+
+/*---------------------GreenNet 2017 Birthday Animation---------------------*/
+
+        
+        @keyframes highlight {
+          from {
+            transform-origin: center;
+          }
+
+          to {
+            transform-origin: center;
+            transform: rotate3d(0, 0, 1, 360deg);
+          }
+        }
+
+        
+        @keyframes ScalePinata {
+          2% {
+            transform: translate(0.5px, -1.5px) rotate(-0.5deg); }
+          4% {
+            transform: translate(0.5px, 1.5px) rotate(1.5deg); }
+          6% {
+            transform: translate(1.5px, 1.5px) rotate(1.5deg); }
+          8% {
+            transform: translate(2.5px, 1.5px) rotate(0.5deg); }
+          10% {
+            transform: translate(0.5px, 2.5px) rotate(0.5deg); }
+          12% {
+            transform: translate(1.5px, 1.5px) rotate(0.5deg); }
+          14% {
+            transform: translate(0.5px, 0.5px) rotate(0.5deg); }
+          16% {
+            transform: translate(-1.5px, -0.5px) rotate(1.5deg); }
+          18% {
+            transform: translate(0.5px, 0.5px) rotate(1.5deg); }
+          20% {
+            transform: translate(2.5px, 2.5px) rotate(1.5deg); }
+          22% {
+            transform: translate(0.5px, -1.5px) rotate(1.5deg); }
+          24% {
+            transform: translate(-1.5px, 1.5px) rotate(-0.5deg); }
+          26% {
+            transform: translate(1.5px, 0.5px) rotate(1.5deg); }
+          28% {
+            transform: translate(-0.5px, -0.5px) rotate(-0.5deg); }
+          30% {
+            transform: translate(1.5px, -0.5px) rotate(-0.5deg); }
+          32% {
+            transform: translate(2.5px, -1.5px) rotate(1.5deg); }
+          34% {
+            transform: translate(2.5px, 2.5px) rotate(-0.5deg); }
+          36% {
+            transform: translate(0.5px, -1.5px) rotate(0.5deg); }
+          38% {
+            transform: translate(2.5px, -0.5px) rotate(-0.5deg); }
+          40% {
+            transform: translate(-0.5px, 2.5px) rotate(0.5deg); }
+          42% {
+            transform: translate(-1.5px, 2.5px) rotate(0.5deg); }
+          44% {
+            transform: translate(-1.5px, 1.5px) rotate(0.5deg); }
+          46% {
+            transform: translate(1.5px, -0.5px) rotate(-0.5deg); }
+          48% {
+            transform: translate(2.5px, -0.5px) rotate(0.5deg); }
+          50% {
+            transform: translate(-1.5px, 1.5px) rotate(0.5deg); }
+          52% {
+            transform: translate(-0.5px, 1.5px) rotate(0.5deg); }
+          54% {
+            transform: translate(-1.5px, 1.5px) rotate(0.5deg); }
+          56% {
+            transform: translate(0.5px, 2.5px) rotate(1.5deg); }
+          58% {
+            transform: translate(2.5px, 2.5px) rotate(0.5deg); }
+          60% {
+            transform: translate(2.5px, -1.5px) rotate(1.5deg); }
+          62% {
+            transform: translate(-1.5px, 0.5px) rotate(1.5deg); }
+          64% {
+            transform: translate(-1.5px, 1.5px) rotate(1.5deg); }
+          66% {
+            transform: translate(0.5px, 2.5px) rotate(1.5deg); }
+          68% {
+            transform: translate(2.5px, -1.5px) rotate(1.5deg); }
+          70% {
+            transform: translate(2.5px, 2.5px) rotate(0.5deg); }
+          72% {
+            transform: translate(-0.5px, -1.5px) rotate(1.5deg); }
+          74% {
+            transform: translate(-1.5px, 2.5px) rotate(1.5deg); }
+          76% {
+            transform: translate(-1.5px, 2.5px) rotate(1.5deg); }
+          78% {
+            transform: translate(-1.5px, 2.5px) rotate(0.5deg); }
+          80% {
+            transform: translate(-1.5px, 0.5px) rotate(-0.5deg); }
+          82% {
+            transform: translate(-1.5px, 0.5px) rotate(-0.5deg); }
+          84% {
+            transform: translate(-0.5px, 0.5px) rotate(1.5deg); }
+          86% {
+            transform: translate(2.5px, 1.5px) rotate(0.5deg); }
+          88% {
+            transform: translate(-1.5px, 0.5px) rotate(1.5deg); }
+          90% {
+            transform: translate(-1.5px, -0.5px) rotate(-0.5deg); }
+          92% {
+            transform: translate(-1.5px, -1.5px) rotate(1.5deg); }
+          94% {
+            transform: translate(0.5px, 0.5px) rotate(-0.5deg); }
+          96% {
+            transform: translate(2.5px, -0.5px) rotate(-0.5deg); }
+          98% {
+            transform: translate(-1.5px, -1.5px) rotate(-0.5deg); }
+          0%, 100% {
+            transform: translate(0, 0) rotate(0); } }
+        @keyframes shake-slow {
+            2% {
+                transform: translate(3px, 7px) rotate(3.5deg);
+            }
+
+            4% {
+                transform: translate(-6px, 10px) rotate(-1.5deg);
+            }
+
+            6% {
+                transform: translate(4px, 0px) rotate(2.5deg);
+            }
+
+            8% {
+                transform: translate(0px, 9px) rotate(.5deg);
+            }
+
+            10% {
+                transform: translate(4px, 3px) rotate(.5deg);
+            }
+
+            12% {
+                transform: translate(8px, 1px) rotate(3.5deg);
+            }
+
+            14% {
+                transform: translate(6px, -2px) rotate(3.5deg);
+            }
+
+            16% {
+                transform: translate(-6px, -4px) rotate(-1.5deg);
+            }
+
+            18% {
+                transform: translate(4px, 9px) rotate(-2.5deg);
+            }
+
+            20% {
+                transform: translate(-2px, 7px) rotate(3.5deg);
+            }
+
+            22% {
+                transform: translate(10px, 5px) rotate(-.5deg);
+            }
+
+            24% {
+                transform: translate(-9px, -7px) rotate(1.5deg);
+            }
+
+            26% {
+                transform: translate(-3px, -5px) rotate(3.5deg);
+            }
+
+            28% {
+                transform: translate(9px, -3px) rotate(-2.5deg);
+            }
+
+            30% {
+                transform: translate(4px, -3px) rotate(2.5deg);
+            }
+
+            32% {
+                transform: translate(-7px, -3px) rotate(-2.5deg);
+            }
+
+            34% {
+                transform: translate(-8px, 10px) rotate(3.5deg);
+            }
+
+            36% {
+                transform: translate(-2px, -3px) rotate(1.5deg);
+            }
+
+            38% {
+                transform: translate(-6px, -9px) rotate(-1.5deg);
+            }
+
+            40% {
+                transform: translate(-6px, -6px) rotate(-1.5deg);
+            }
+
+            42% {
+                transform: translate(8px, -9px) rotate(2.5deg);
+            }
+
+            44% {
+                transform: translate(5px, 9px) rotate(-1.5deg);
+            }
+
+            46% {
+                transform: translate(-1px, 1px) rotate(-.5deg);
+            }
+
+            48% {
+                transform: translate(9px, -6px) rotate(-.5deg);
+            }
+
+            50% {
+                transform: translate(-6px, -4px) rotate(-1.5deg);
+            }
+
+            52% {
+                transform: translate(0px, 10px) rotate(-.5deg);
+            }
+
+            54% {
+                transform: translate(8px, 9px) rotate(.5deg);
+            }
+
+            56% {
+                transform: translate(5px, 2px) rotate(-1.5deg);
+            }
+
+            58% {
+                transform: translate(9px, -9px) rotate(2.5deg);
+            }
+
+            60% {
+                transform: translate(1px, -1px) rotate(3.5deg);
+            }
+
+            62% {
+                transform: translate(-2px, 4px) rotate(2.5deg);
+            }
+
+            64% {
+                transform: translate(-7px, 5px) rotate(.5deg);
+            }
+
+            66% {
+                transform: translate(-8px, -6px) rotate(-1.5deg);
+            }
+
+            68% {
+                transform: translate(-9px, 6px) rotate(.5deg);
+            }
+
+            70% {
+                transform: translate(-7px, -5px) rotate(.5deg);
+            }
+
+            72% {
+                transform: translate(3px, -8px) rotate(-2.5deg);
+            }
+
+            74% {
+                transform: translate(-7px, 0px) rotate(-2.5deg);
+            }
+
+            76% {
+                transform: translate(7px, -8px) rotate(-2.5deg);
+            }
+
+            78% {
+                transform: translate(6px, 3px) rotate(2.5deg);
+            }
+
+            80% {
+                transform: translate(3px, 4px) rotate(2.5deg);
+            }
+
+            82% {
+                transform: translate(-9px, 1px) rotate(-.5deg);
+            }
+
+            84% {
+                transform: translate(-6px, 7px) rotate(1.5deg);
+            }
+
+            86% {
+                transform: translate(7px, 9px) rotate(2.5deg);
+            }
+
+            88% {
+                transform: translate(1px, -4px) rotate(.5deg);
+            }
+
+            90% {
+                transform: translate(9px, -9px) rotate(-2.5deg);
+            }
+
+            92% {
+                transform: translate(-4px, -5px) rotate(-.5deg);
+            }
+
+            94% {
+                transform: translate(-2px, -9px) rotate(2.5deg);
+            }
+
+            96% {
+                transform: translate(-6px, -6px) rotate(-1.5deg);
+            }
+
+            98% {
+                transform: translate(-2px, -6px) rotate(-1.5deg);
+            }
+
+            0%,100% {
+                transform: translate(0, 0) rotate(0);
+            }
+        }
+/*---------------------GreenNet 2017 Birthday Animation---------------------*/
+
+
+
+
+
+/*---------------------GreenNet 2017 Birthday---------------------*/
+
+
+
+
+
+
+

@@ -1,0 +1,281 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{ margin: 0 auto;
+box-sizing:border-box;}
+
+html, body {
+    height: 100%;
+}
+body {
+	background:white; 
+	margin: 0 auto; 
+	font-family: "微軟正黑體", "Microsoft JhengHei","Helvetica", "Microsoft JhengHei";
+	line-height:1.48;
+	font-size:16px;
+	/*margin-bottom: 60px;*/
+}
+ul,li{
+	list-style:none;
+}
+ul li {
+	float:left; 
+	width:150px; 
+	font-weight:bold;
+	color:#fff;
+	}
+ul li ul {
+	padding:0;
+}
+ul li ul li {
+	float:none; padding:5px 0; font-weight:normal;
+}
+a { 
+	cursor:pointer; color: #fff;
+}
+a:hover { color: #194f00;}
+a, a:hover, a:link, a:visited, a:active {
+	text-decoration:none;
+}
+p{
+	font-size:16px;
+	color:#000;
+}
+img{
+	border:none;
+}
+.header{
+	min-height:400px;
+	background-color:#fff;
+}
+.logo{
+	background-color:#afe262;
+	max-height:169px;
+}
+.logo img{
+	margin: 0 auto;
+	display: block;
+	width:900px;
+}
+.container {
+    min-height: 100%;
+}
+.content {
+    min-height: 600px;
+}
+.content h2{
+    text-align: center;
+	padding-bottom: 10px;
+}
+.content-inside{
+	min-height: 500px;
+    background-color: #fff;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+	background:#fff;
+}
+.page {
+    background-color: #d5ef65;
+}
+.page1 {
+	background:#FFF repeat-x;
+	min-height:500px;
+	padding-top: 14px;
+    	border-top: 5px solid #0076d0;
+    	background-image: url(../image/background.png);
+	
+}
+	
+.page2 {
+	background:#f2f2f2;
+	min-height:200px;
+	padding-top: 15px;
+}
+
+
+/*----------------頁籤---------------------*/
+.mainNews{
+	min-height:150px;
+}
+.tab_container {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top:-54px;
+}
+
+input, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+section {
+  display: none;
+}
+input {
+  display: none;
+}
+label {
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 20%;
+  padding:1.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+  border-radius: 20px 20px 0 0;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2{
+  display: block;
+  padding: 20px;
+  background: #fff;
+  color: #999;
+  border-bottom: 2px solid #f0f0f0;
+}
+#content1,#content2{
+	position: relative;
+    top: 80px;
+}
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_container .tab-content h3  {
+  text-align: center;
+}
+
+.tab_container [id^="tab"]:checked + label {
+  background-color: #d5ef65;
+  /*background: #fff;
+  box-shadow: inset 0 3px #0CE;*/
+}
+
+.tab_container [id^="tab"]:checked + label .fa {
+  color: #0CE;
+}
+.tainan{
+	background-image: url(../img/label01.png);
+    background-repeat: no-repeat;
+	background-position: center;
+}
+.kaohsiung{
+	background-image: url(../img/label02.png);
+    background-repeat: no-repeat;
+	background-position: center;
+}
+/*----------------頁籤---------------------*/
+/* ~~~~~~~~~~~~~~~ 頁尾 ~~~~~~~~~~~~~~~~ */
+.footer {
+	width: 100%;
+	min-height: 225px;
+   	bottom: 0;
+   	left: 0;
+	box-sizing:border-box;
+	background:#603813 repeat-x;
+    position: relative;
+}
+.text-muted {
+	padding:20px 10px;
+	font-size:14px;
+	line-height:24px;
+	background-color:#754c24;
+	min-height:195px;
+}
+.bottom{
+	text-align:center;
+	padding: 10px 0;
+}
+.bottom p{	
+	color:#fff;
+	font-size:14px;
+	line-height:24px;
+	display:inline-block;
+	
+}
+.footer p {
+	font-size:14px;
+	color:#fff;
+	margin: 0;
+}
+.text-link{
+	height:42px;
+	background:#e6e1b7;
+	margin: 0 auto;
+}
+.text-link a{
+	color: #736357;
+}
+.text-link li{
+	float:right;
+	line-height:42px;
+	padding-left:15px;
+	padding-right:15px;
+	border-left:1px solid #ccc593;
+}
+.text-link li:hover{
+	background:#f2edc1;
+}
+/* ~~~~~~~~~~~~~~~ 頁尾 ~~~~~~~~~~~~~~~~ */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+.header{
+	background:none;
+    height: 0px;
+}
+/*.logo{
+	display: none;	
+}*/
+.menuBar{
+	display: none;
+}
+  .tab_container {
+    width: 98%;
+  }
+  label{
+	  width:50%;
+  }
+  .logo{
+	 height:80px;
+  }
+  .logo img{
+	display:none;
+  }
+}
+@media (max-width: 991px) {
+.footer {
+    height: auto;
+}
+}
+@media (min-width: 992px) {
+	label{
+		  width:15%;
+	  }
+}
+@media (min-width: 1200px) {
+
+}
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+  	transform: scale(0.9);
+  	opacity: 0;
+  }
+  
+  100% {
+  	transform: scale(1);
+  	opacity: 1;
+  }
+}

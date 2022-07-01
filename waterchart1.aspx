@@ -1,0 +1,107 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="waterchart1.aspx.cs" Inherits="index_d3_testt" %>
+
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  padding-top: 0px;
+  position: relative;
+  /*width: 480px;*/
+  /*zoom:30%;*/
+}
+
+button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.bullet { font: 10px sans-serif; }
+.bullet .marker { stroke: #000; stroke-width: 2px; }
+.bullet .tick line { stroke: #666; stroke-width: .5px; }
+.bullet .range.s0 { fill: #eee; }
+.bullet .range.s1 { fill: #eee; }
+.bullet .range.s2 { fill: #eee; }
+.bullet .measure.s0 { fill: transparent; }
+.bullet .measure.s1 { fill: green; }
+.bullet .title { font-size: 14px; font-weight: bold; }
+.bullet .subtitle { fill: #999; }
+
+</style>
+<%--<button >Update</button>--%>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="js/bullet.js"></script>
+<script>
+
+var margin = {top: 0, right: 40, bottom: 20, left: 40},
+    width = 360 - margin.left - margin.right,
+    height = 40 - margin.top - margin.bottom;
+
+var chart = d3.bullet()
+    .width(width)
+    .height(height);
+
+d3.json("waterdata.aspx?c=1", function (error, data) {
+  if (error) throw error;
+
+  var svg = d3.select("body").selectAll("svg")
+      .data(data)
+    .enter().append("svg")
+      .attr("class", "bullet")
+     
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+      .call(chart);
+
+  var title = svg.append("g")
+      .style("text-anchor", "end")
+      .attr("transform", "translate(-6," + height / 2 + ")");
+
+  //var num = svg.append("g")
+  // .style("text-anchor", "end")
+  // .attr("transform", "translate(250," + height / 2 + ")")
+  // .text(function (d) { return d.measures.text.split(",")[0]; });
+
+  //  num.append("text")
+  // .attr("class", "title")
+  // .text(function (d) { return d.measures.text.split(",")[0]; });
+
+
+  title.append("text")
+      .attr("class", "title")
+      .text(function (d) { return d.title; });
+      
+
+  title.append("text")
+      .attr("class", "subtitle")
+      .attr("dy", "1em")
+      .text(function(d) { return d.subtitle; });
+
+  d3.selectAll("button").on("click", function() {
+    svg.datum(randomize).call(chart.duration(1000)); // TODO automatic transition
+  });
+});
+
+function randomize(d) {
+  if (!d.randomizer) d.randomizer = randomizer(d);
+  d.ranges = d.ranges.map(d.randomizer);
+  d.markers = d.markers.map(d.randomizer);
+  d.measures = d.measures.map(d.randomizer);
+  return d;
+}
+
+function randomizer(d) {
+  var k = d3.max(d.ranges) * .2;
+  return function(d) {
+    return Math.max(0, d + k * (Math.random() - .5));
+  };
+}
+
+</script>
+
